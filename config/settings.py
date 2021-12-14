@@ -45,6 +45,13 @@ INSTALLED_APPS = [
     'core.login',
     'core.user',
     'core.reports',
+    # LocalApps
+    'persona',
+    'cursos',
+
+    # Formularios
+    'smart_selects',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -125,7 +132,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-LOGIN_REDIRECT_URL = '/erp/dashboard/'
+LOGIN_REDIRECT_URL = '/'
 
 LOGOUT_REDIRECT_URL = '/login/'
 
